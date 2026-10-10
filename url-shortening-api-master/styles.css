@@ -3,20 +3,32 @@ body {
   align-items: center;
   flex-direction: column;
   font-size: 18px;
+  font-weight: 500, 700;
+  font-family: "poppins";
 }
 
 #navbar {
   display: flex;
   flex-direction: row;
   padding: 15px 30px;
-  border: 1px, solid, black;
+  /* border: 1px, solid, black; */
   justify-content: space-between;
   
 }
+#logo{
+    margin-top:20px;
+    height:30px;
+}
 #nav-links{
+    /* border: 1px, solid, black; */
     display: flex;
-    gap: 18px;
+    gap: 25px;
     list-style: none;
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-right:380px;
+    color: hsl(257, 7%, 63%);
 }
 #head-links{
     display: flex;
@@ -36,6 +48,41 @@ body {
     padding: 5px;
     padding-left: 15px;
     padding-right: 15px;
+    color: hsl(257, 7%, 63%);
+}
+
+hero{
+    display: flex;
+    margin-left: 150px;
+    /* margin-top:90px; */
+    justify-content: center;
+    align-items: center;
+}
+#hero-section h1{
+    padding:0px;
+    transform: scale(2.2);
+    /* border:1px, solid black; */
+    margin-left: 160px;
+    margin-right: 100px;
+    color:hsl(255, 11%, 22%)
+}
+#hero-section #hero-para{
+    color:hsl(257, 7%, 63%);
+    padding-top: 20px;
+    margin-right: 50px;
+}
+#get-started1{
+    background-color: hsl(180, 66%, 49%);
+    border-radius: 20px;
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-right:400px;
+    color: white;
+}
+#illustration{
+    transform: translate(140px)
+
 }
 footer {
   background-color: hsl(260, 8%, 14%);
