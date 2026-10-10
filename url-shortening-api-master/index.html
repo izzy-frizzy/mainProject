@@ -15,7 +15,7 @@
 <body>
   <header>
 <nav id= "navbar" role ="navigation">
-<img src="images/logo.svg">
+<img id="logo" src="images/logo.svg">
   <ul id="nav-links">
     <li>Features</li>
     <li>Pricing</li>
@@ -23,10 +23,11 @@
   </ul>
  
   <section id="head-links">
- <div class="head-btn"> Login</div>
-  <div class="head-btn">Sign Up</div>
-  </nav>
+ <p class="head-btn" id="login"> Login</p>
+  <p class="head-btn" id="signup">Sign Up</p>
   </section>
+  </nav>
+  
 </header>
 <Body>
   <hero>
@@ -40,29 +41,31 @@
 <img id="illustration" src="images/illustration-working.svg">
 </hero>
   <section id="input layer">
-    
+    <img id="input-bg" src="images/bg-shorten-desktop.svg">
  <div id="input container">
  <input type="text" placeholder="Shorten a link here...">
 <button id="shorten-it">Shorten It!</button>
  </div>
  </section>
   
- 
-
-  <h2>Advanced Statistics</h2>
+ <div id="grey">
+ <div id="advanced-static">
+<h2>Advanced Statistics</h2>
 
   <p>Track how your links are performing across the web with our 
   advanced statistics dashboard.
+ </div>
+  
 </p>
 <section>
-  <div class="card">
+  <div class="card" id="card1">
     <img id="brand" src="images/icon-brand-recognition.svg">
   <h3>Brand Recognition</h3>
 
   <p>Boost your brand recognition with each click. Generic links don’t 
   mean a thing. Branded links help instil confidence in your content.</p>
   </div>
-<div class="card">
+<div class="card" id="card2">
   <img id="deatiled-records" src="images/icon-detailed-records.svg">
   <h3>Detailed Records</h3>
 
@@ -70,7 +73,7 @@
   people engage with your content helps inform better decisions.</p>
   </div>
 
-  <div class="card">
+  <div class="card" id="card3">
     <img id="customizable" src="images/icon-fully-customizable.svg">
   <h3>Fully Customizable</h3>
 
@@ -78,7 +81,9 @@
   links, supercharging audience engagement.</p>
   </div>
 </section>
+</div>
   <div id="slice">
+    <img src="images/bg-boost-desktop.svg">
 <h2>Boost your links today</h2> 
 
   <p>Get Started</p>
@@ -86,7 +91,6 @@
   </div>
  
 </Body>
-
 
   <footer>
     <h3>Shortly</h3>

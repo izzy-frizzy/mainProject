@@ -1,21 +1,45 @@
-
-footer{
-    background-color: hsl(257, 27%, 26%);
+body {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-size: 18px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+#navbar {
+  display: flex;
+  flex-direction: row;
+  padding: 15px 30px;
+  border: 1px, solid, black;
+  justify-content: space-between;
+  
+}
+#nav-links{
+    display: flex;
+    gap: 18px;
+    list-style: none;
+}
+#head-links{
+    display: flex;
+    gap: 10px;
+    margin-left: 200px;
+}
+#signup{
+    background-color: hsl(180, 66%, 49%);
+    border-radius: 20px;
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: white;
+    
+}
+#login{
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+footer {
+  background-color: hsl(260, 8%, 14%);
+}
 
 .attribution {
   font-size: 11px;
