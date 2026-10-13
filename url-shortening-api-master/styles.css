@@ -51,10 +51,11 @@ body {
     color: hsl(257, 7%, 63%);
 }
 
-hero{
+hero {
     display: flex;
     margin-left: 150px;
-    /* margin-top:90px; */
+    margin-top:50px;
+    margin-bottom: 70px;
     justify-content: center;
     align-items: center;
 }
@@ -82,7 +83,16 @@ hero{
 }
 #illustration{
     transform: translate(140px)
-
+}
+#input-layer{
+  position: relative;
+  display: flex;
+}
+#input-bg{
+    background-color: hsl(257, 27%, 26%);
+}
+#input-container{
+    
 }
 footer {
   background-color: hsl(260, 8%, 14%);
