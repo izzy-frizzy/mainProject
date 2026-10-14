@@ -6,6 +6,14 @@ body {
   font-weight: 500, 700;
   font-family: "poppins";
 }
+main{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+#grey{
+    background-color: hsl(0, 0%, 75%);
+}
 
 #navbar {
   display: flex;
@@ -30,6 +38,10 @@ body {
     margin-right:380px;
     color: hsl(257, 7%, 63%);
 }
+#nav-links li:hover{
+    color: black;
+    cursor: pointer;
+}
 #head-links{
     display: flex;
     gap: 10px;
@@ -44,20 +56,29 @@ body {
     color: white;
     
 }
+#signup:hover{
+    background-color: hsl(161, 84%, 83%);
+    cursor: pointer;
+}
 #login{
     padding: 5px;
     padding-left: 15px;
     padding-right: 15px;
     color: hsl(257, 7%, 63%);
 }
+#login:hover{
+    color: black;
+    cursor: pointer;
+}
 
 hero {
     display: flex;
-    margin-left: 150px;
+    margin-left: 180px;
     margin-top:50px;
     margin-bottom: 70px;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 #hero-section h1{
     padding:0px;
@@ -76,23 +97,34 @@ hero {
     background-color: hsl(180, 66%, 49%);
     border-radius: 20px;
     padding: 5px;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 12px;
+    padding-right: 5px;
     margin-right:400px;
     color: white;
 }
+#get-started1:hover{
+    background-color: hsl(161, 84%, 83%);
+    cursor: pointer;
+}
 #illustration{
-    transform: translate(140px)
+    transform: translateX(100px);
 }
 #input-layer{
-  position: relative;
-  display: flex;
+  
 }
 #input-bg{
     background-color: hsl(257, 27%, 26%);
+    display: block;
+    transform: translateY(20px);
 }
 #input-container{
-    
+    transform: translate(100px, -100px);
+
+}
+input{
+    width: 800px;
+    height:25px;
+    border-radius: 5px;
 }
 footer {
   background-color: hsl(260, 8%, 14%);
