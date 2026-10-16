@@ -1,3 +1,10 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100%;
+}
 body {
   display: flex;
   align-items: center;
@@ -6,128 +13,248 @@ body {
   font-weight: 500, 700;
   font-family: "poppins";
 }
-main{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+main {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
-#grey{
-    background-color: hsl(0, 0%, 75%);
-}
-
 #navbar {
   display: flex;
   flex-direction: row;
   padding: 15px 30px;
   /* border: 1px, solid, black; */
   justify-content: space-between;
-  
 }
-#logo{
-    margin-top:20px;
-    height:30px;
+#logo {
+  margin-top: 20px;
+  height: 30px;
 }
-#nav-links{
-    /* border: 1px, solid, black; */
-    display: flex;
-    gap: 25px;
-    list-style: none;
-    padding: 5px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-right:380px;
-    color: hsl(257, 7%, 63%);
+#nav-links {
+  /* border: 1px, solid, black; */
+  display: flex;
+  gap: 25px;
+  list-style: none;
+  padding: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-right: 380px;
+  color: hsl(257, 7%, 63%);
 }
-#nav-links li:hover{
-    color: black;
-    cursor: pointer;
+#nav-links li:hover {
+  color: black;
+  cursor: pointer;
 }
-#head-links{
-    display: flex;
-    gap: 10px;
-    margin-left: 200px;
+#head-links {
+  display: flex;
+  gap: 10px;
+  margin-left: 200px;
 }
-#signup{
-    background-color: hsl(180, 66%, 49%);
-    border-radius: 20px;
-    padding: 5px;
-    padding-left: 15px;
-    padding-right: 15px;
-    color: white;
-    
+#signup {
+  background-color: hsl(180, 66%, 49%);
+  border-radius: 20px;
+  padding: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  color: white;
 }
-#signup:hover{
-    background-color: hsl(161, 84%, 83%);
-    cursor: pointer;
+#signup:hover {
+  background-color: hsl(161, 84%, 83%);
+  cursor: pointer;
 }
-#login{
-    padding: 5px;
-    padding-left: 15px;
-    padding-right: 15px;
-    color: hsl(257, 7%, 63%);
+#login {
+  padding: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  color: hsl(257, 7%, 63%);
 }
-#login:hover{
-    color: black;
-    cursor: pointer;
+#login:hover {
+  color: black;
+  cursor: pointer;
 }
 
 hero {
+  display: flex;
+  margin-left: 180px;
+  margin-top: 50px;
+  margin-bottom: 70px;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+#hero-section h1 {
+  padding: 0px;
+  transform: scale(2.2);
+  /* border:1px, solid black; */
+  margin-left: 160px;
+  margin-right: 100px;
+  color: hsl(255, 11%, 22%);
+}
+#hero-section #hero-para {
+  color: hsl(257, 7%, 63%);
+  padding-top: 20px;
+  margin-right: 50px;
+}
+#get-started1 {
+  background-color: hsl(180, 66%, 49%);
+  border-radius: 20px;
+  padding: 5px;
+  padding-left: 12px;
+  padding-right: 5px;
+  margin-right: 400px;
+  color: white;
+}
+#get-started1:hover {
+  background-color: hsl(161, 84%, 83%);
+  cursor: pointer;
+}
+#illustration {
+  transform: translateX(130px);
+}
+#input-layer {
+  display: flex;
+}
+#input-bg {
+  background-color: hsl(257, 27%, 26%);
+  /* display: block; */
+  transform: translateY(140px);
+}
+#input-container {
+  transform: translate(100px, 20px);
+  gap: 15px;
+  display: flex;
+}
+#input-Field {
+  width: 800px;
+  height: 50px;
+  border-radius: 5px;
+}
+input::placeholder {
+  font-size: 16px;
+  color: hsl(257, 7%, 63%);
+  padding-left: 15px;
+}
+#shorten-it {
+  background-color: hsl(180, 66%, 49%);
+  color: white;
+  border-radius: 5px;
+  height: 50px;
+  width: 100px;
+  border: none;
+  cursor: pointer;
+}
+#grey {
+  background-color: hsl(0, 0%, 88%);
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  /* grid-template-columns: 1fr, 1fr, 1fr;
+    grid-template-rows: 1fr, 1fr;*/
+}
+#advanced-static h2 {
+  margin-top: 200px;
+  /* border: 1px, solid, black; */
+  text-align: center;
+  transform: scale(1.4);
+}
+#advanced-static p {
+  color: hsl(257, 7%, 63%);
+  /* border: 1px, solid, black; */
+  font-size: 18px;
+  width: 500px;
+  text-align: center;
+}
+#cards {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  margin-bottom: 300px;
+  margin-top: 100px;
+  position: relative;
+}
+.card {
+  background-color: white;
+  border-radius: 5px;
+  padding: 20px;
+  width: 300px;
+  text-align: left;
+  /* height:250px; */
+  /* margin-top: 40px; */
+}
+.card img {
+  background-color: hsl(255, 11%, 22%);
+  border-radius: 50%;
+  padding: 10px;
+  width: 20%;
+  height: 20%;
+  /* object-fit: cover; */
+  transform: translateY(-70px);
+}
+.card p {
+  color: hsl(257, 7%, 63%);
+}
+#blue-line {
+  background-color: hsl(180, 66%, 49%);
+  height: 5px;
+  width: 720px;
+  position: absolute;
+  bottom: 100px;
+  right: 20px;
+}
+#card2 {
+  transform: translateY(60px);
+  /* position: absolute; */
+}
+#card3 {
+  transform: translateY(120px);
+}
+#slice {
+  position: relative;
+}
+#slice img {
+  background-color: hsl(257, 27%, 26%);
+  display: block;
+}
+#inner-slice {
+  position: absolute;
+  inset: 0; /* stretch to cover the image */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#inner-slice h2 {
+  text-align: center;
+  color: white;
+}
+#inner-slice p {
+  background-color: hsl(180, 66%, 49%);
+  border-radius: 20px;
+  padding: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  color: white;
+  text-align: center;
+  margin-right: 650px;
+  margin-left: 650px;
+}
+#inner-slice p:hover {
+  background-color: hsl(161, 84%, 83%);
+  cursor: pointer;
+}
+#foot{
     display: flex;
-    margin-left: 180px;
-    margin-top:50px;
-    margin-bottom: 70px;
+    gap: 100px;
+    padding: 30px;
     justify-content: center;
-    align-items: center;
-    overflow: hidden;
-}
-#hero-section h1{
-    padding:0px;
-    transform: scale(2.2);
-    /* border:1px, solid black; */
-    margin-left: 160px;
-    margin-right: 100px;
-    color:hsl(255, 11%, 22%)
-}
-#hero-section #hero-para{
-    color:hsl(257, 7%, 63%);
-    padding-top: 20px;
-    margin-right: 50px;
-}
-#get-started1{
-    background-color: hsl(180, 66%, 49%);
-    border-radius: 20px;
-    padding: 5px;
-    padding-left: 12px;
-    padding-right: 5px;
-    margin-right:400px;
-    color: white;
-}
-#get-started1:hover{
-    background-color: hsl(161, 84%, 83%);
-    cursor: pointer;
-}
-#illustration{
-    transform: translateX(100px);
-}
-#input-layer{
-  
-}
-#input-bg{
-    background-color: hsl(257, 27%, 26%);
-    display: block;
-    transform: translateY(20px);
-}
-#input-container{
-    transform: translate(100px, -100px);
-
-}
-input{
-    width: 800px;
-    height:25px;
-    border-radius: 5px;
+    /* align-items: center; */
 }
 footer {
   background-color: hsl(260, 8%, 14%);
+  width: 100%;
 }
 
 .attribution {
