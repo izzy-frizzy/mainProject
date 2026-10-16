@@ -170,9 +170,10 @@ input::placeholder {
 #cards {
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
   gap: 30px;
-  margin-bottom: 300px;
-  margin-top: 100px;
+  margin-bottom: 200px;
+  margin-top: 50px;
   position: relative;
 }
 .card {
@@ -185,13 +186,16 @@ input::placeholder {
   /* margin-top: 40px; */
 }
 .card img {
+    display: block;
+    /* box-sizing: border-box; */
+    margin: -50px 0 20px;
   background-color: hsl(255, 11%, 22%);
   border-radius: 50%;
   padding: 10px;
   width: 20%;
   height: 20%;
   /* object-fit: cover; */
-  transform: translateY(-70px);
+  transform: translateY(-15px);
 }
 .card p {
   color: hsl(257, 7%, 63%);
@@ -251,6 +255,12 @@ input::placeholder {
     padding: 30px;
     justify-content: center;
     /* align-items: center; */
+}
+#foot h3{
+    transform: scale(1.4);
+    color: white;
+    margin-top: 50px;
+    margin-right: 120px;
 }
 footer {
   background-color: hsl(260, 8%, 14%);
