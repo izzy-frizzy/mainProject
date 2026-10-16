@@ -8,7 +8,7 @@
   
   <title>Frontend Mentor | Shortly URL shortening API Challenge</title>
   <link rel="stylesheet" href="styles.css">
-  <script src="script.js" defer></script>
+  
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Figtree:ital,wght@0,300..900;1,300..900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -29,7 +29,9 @@
   <p class="head-btn" id="signup">Sign Up</p>
   </section>
   </nav>
-  
+  <button id="menu-btn" aria-label="Open menu">
+  <span></span><span></span><span></span>
+</button>
 </header>
 
 <main>
@@ -50,11 +52,14 @@
 
     <img id="input-bg" src="images/bg-shorten-desktop.svg">
  <div id="input-container">
+  <form id="form">
  <input id= "input-Field" type="url" placeholder="Shorten a link here...">
 <button id="shorten-it">Shorten It!</button>
+</form>
  </div>
 
  </section>
+ <ul id="results"></ul>
   
  <div id="grey">
  <div id="advanced-static">
@@ -108,30 +113,30 @@
     <div id="foot">
     <h3>Shortly</h3>
     <section id="featured">
-      <p id="the feature">Features</p>
+      <p class="white">Features</p>
 
-  <p>Link Shortening</p>
-  <p>Branded Links</p>
-  <p>Analytics</p>
+  <p class="grey">Link Shortening</p>
+  <p class="grey">Branded Links</p>
+  <p class="grey">Analytics</p>
     </section>
     
   <section id="resources">
-<p id="the resource">Resources</p>
+<p class="white">Resources</p>
 
-  <p>Blog</p>
-  <p>Developers</p>
-  <p>Support</p>
+  <p class="grey">Blog</p>
+  <p class="grey">Developers</p>
+  <p class="grey">Support</p>
   </section> 
 <section id="company">
-<p id="the-company">Company</p>
+<p class="white">Company</p>
 
-  <p>About</p>
-  <p>Our Team</p>
-  <p>Careers</p>
-  <p>Contact</p>
+  <p class="grey">About</p>
+  <p class="grey">Our Team</p>
+  <p class="grey">Careers</p>
+  <p class="grey">Contact</p>
 
 </section>
-<section id="logo images">
+<section id="logo-images">
 <img src="images/icon-facebook.svg">
 <img src="images/icon-twitter.svg">
 <img src="images/icon-pinterest.svg">
@@ -144,5 +149,6 @@
   </div>
 
 </footer>
+<script type="module" src="script.js"></script>
 </body>
 </html>
