@@ -116,10 +116,10 @@ hero {
 #input-bg {
   background-color: hsl(257, 27%, 26%);
   /* display: block; */
-  transform: translateY(140px);
+  transform: translateY(180px);
 }
 #input-container {
-  transform: translate(100px, 20px);
+  transform: translate(100px, 60px);
   gap: 15px;
   display: flex;
 }
@@ -141,6 +141,23 @@ input::placeholder {
   width: 100px;
   border: none;
   cursor: pointer;
+}
+#shorten-it:hover{
+  background-color: hsl(161, 84%, 83%);
+}
+#results{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 100px;
+}
+#results li{
+  margin-top: 70px;
+  border-radius: 10%;
+  background-color: white;
+  list-style: none;
+  padding-left: 200px;
+  padding-right: 200px;
 }
 #grey {
   background-color: hsl(0, 0%, 88%);
