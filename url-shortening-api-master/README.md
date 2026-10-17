@@ -10,4 +10,4 @@ Write a 200-300 word reflection discussing your development process, challenges 
 
 *what I could have done to improve my code is add the navigation list properly but i ran out of time and I could have also made the links look better as well
 
-here is the ur of the project https://urlshorteningporject.netlify.app
+here is the ur of the project link:https://urlshorteningproject.netlify.app
