@@ -145,14 +145,14 @@ input::placeholder {
 #shorten-it:hover{
   background-color: hsl(161, 84%, 83%);
 }
-#input-Field.error {
+ #input-Field.error {  /*when theres an error it turns red */
     border: 2px solid #f46262;
 }
-#input-Field.error::placeholder {
+#input-Field.error::placeholder { /*when theres an error it turns red */
     color: #f46262;
     opacity: 0.6;
 }
-.error-msg {
+.error-msg { /*when theres an error it turns red */
     color: #f46262;
     font-style: italic;
     font-size: 0.85rem;
@@ -354,6 +354,7 @@ footer {
 
   /* ---------- Header ---------- */
   header {
+    display: flex;
     width: 100%;
   }
   #navbar {
