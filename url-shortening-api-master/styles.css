@@ -116,10 +116,10 @@ hero {
 #input-bg {
   background-color: hsl(257, 27%, 26%);
   /* display: block; */
-  transform: translateY(180px);
+  transform: translateY(150px);
 }
 #input-container {
-  transform: translate(100px, 60px);
+  transform: translate(100px, 20px);
   gap: 15px;
   display: flex;
 }
@@ -145,6 +145,19 @@ input::placeholder {
 #shorten-it:hover{
   background-color: hsl(161, 84%, 83%);
 }
+#input-Field.error {
+    border: 2px solid #f46262;
+}
+#input-Field.error::placeholder {
+    color: #f46262;
+    opacity: 0.6;
+}
+.error-msg {
+    color: #f46262;
+    font-style: italic;
+    font-size: 0.85rem;
+    margin: 6px 0 0;
+}
 #results{
   display: flex;
   flex-direction: column;
@@ -158,6 +171,25 @@ input::placeholder {
   list-style: none;
   padding-left: 200px;
   padding-right: 200px;
+}
+
+.copy-btn {
+    background: #2acfcf;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    width: 103px;
+    height: 40px;
+    font-weight: 700;
+    font-family: inherit;
+    cursor: pointer;
+}
+.copy-btn:hover {
+    background: hsl(161, 84%, 83%);
+}
+
+.copy-btn.copied {
+    background: hsl(257, 27%, 26%);
 }
 #grey {
   background-color: hsl(0, 0%, 88%);
@@ -411,9 +443,10 @@ footer {
     height: 150px;
     margin: 50px;
     border-radius: 10px;
+    transform: translateY(350px);
   }
   #input-container {
-    transform: translate(5px,-113px);
+    transform: translate(5px,100px);
     flex-direction: column;
     gap: 16px;
     margin: 60px;

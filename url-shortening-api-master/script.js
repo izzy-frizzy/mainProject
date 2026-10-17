@@ -3,13 +3,20 @@ import {token} from "./secret.js"
 const form = document.getElementById("form")
 const input = document.getElementById("input-Field");
 const result = document.getElementById("results");
+const errorMsg = document.getElementById("error-msg");
+
 
 let linksList = [];
 
 form.addEventListener("submit", async (event) => {
     event.preventDefault();
     const long_url = input.value.trim();
-    if (!long_url) return;
+    if (!long_url){
+        input.classList.add("error");
+        errorMsg.textContent = "Please add a link";
+        return;}
+        input.classList.remove("error");
+        errorMsg.textContent = "";
 
     try {
         const data = await shortenLink(long_url);   // wait for Bitly
@@ -62,17 +69,22 @@ function showLink() {
 
         let copy = document.createElement("button");
         copy.type = "button";
+        copy.className = "copy-btn";
         copy.innerText = "copy";
 
         copy.addEventListener("click", async () => {
             try {
                 await navigator.clipboard.writeText(linksList[i].short);
+                
+                copy.classList.add("copied");
                 copy.innerText = "copied!";
             } catch (error) {
                 console.error("Copy failed:", error);
                 copy.innerText = "failed";
             }
-            setTimeout(() => (copy.innerText = "copy"), 1500);
+            setTimeout(() => (copy.innerText = "copy"), 1500); 
+           setTimeout(()=>(copy.classList.remove("copied")),1500); //this is to remove the class for the copy button
+
         });
 
         linkItem.appendChild(copy);   // button into the li
