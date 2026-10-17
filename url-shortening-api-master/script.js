@@ -14,7 +14,8 @@ form.addEventListener("submit", async (event) => {
     if (!long_url){
         input.classList.add("error");
         errorMsg.textContent = "Please add a link";
-        return;}
+        return;
+    }
         input.classList.remove("error");
         errorMsg.textContent = "";
 
